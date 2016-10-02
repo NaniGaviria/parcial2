@@ -33,6 +33,13 @@ public class Estrella extends Lan {
   protected void removeDevice(int index){
     devices.remove(index);
   }
+  protected void removeDevice(String id){
+    for (int i = 0;i <= devices.size();i++) {
+      if (devices.get(i).getId().equals(id)==true)
+      devices.remove(i);
+    }
+
+  }
 
   protected void enviarDato(int index,String dato){
     devices.get(index).setDato(dato);
