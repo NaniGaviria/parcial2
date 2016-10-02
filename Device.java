@@ -1,8 +1,8 @@
-class Device{
+public lclass Device{
 
-String tipo = "";
-String dato = "";
-String id = "";
+  String tipo = "";
+  String dato = "";
+  String id = "";
 
   public Device(String tipo, String id){
     this.tipo = tipo;
