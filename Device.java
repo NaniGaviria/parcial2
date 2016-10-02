@@ -6,16 +6,16 @@ String dato = "";
 public Device(String tipo){
   this.tipo = tipo;
 }
-private void setDato(String dato){
+public void setDato(String dato){
   this.dato = dato;
 }
-private String getDato(){
+public String getDato(){
   return dato;
 }
-private void setTipo(String tipo){
+public void setTipo(String tipo){
   this.tipo=tipo;
 }
-private String getTipo(){
+public String getTipo(){
   return tipo;
 }
 
