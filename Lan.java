@@ -15,11 +15,4 @@ public class Lan {
   protected int getCapacidad(){
     return capacidad;
   }
-  protected void setTipoDeComunicacion(tipoDeComunicacion){
-    this.tipoDeComunicacion = tipoDeComunicacion;
-  }
-  protected void setCapacidad(){
-    this.capacidad = capacidad;
-  }
-
 }
