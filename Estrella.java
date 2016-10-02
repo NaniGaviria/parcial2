@@ -6,6 +6,7 @@ public class Estrella extends Lan {
   private String pass = "";
   private String  medio = "";//medio de transmision alambrico o inalambrico
   private int countId=0;
+
   public Estrella(String tipoDeComunicacion,int capacidad,String pass, String medio){
     super(tipoDeComunicacion,capacidad);
     this.pass = pass;
