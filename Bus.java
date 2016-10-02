@@ -7,14 +7,11 @@ public class Bus extends Lan {
   private String  medio = "";//medio de transmision alambrico o inalambrico
   private int countId=0;
 
-    public Bus(String tipoDeComunicacion,int capacidad,String pass, String medio){
+    public Bus(String tipoDeComunicacion,int capacidad,String pass){
 
-      super(tipoDeComunicacion,capacidad);
-      this.pass = pass;
-      this.medio = medio;
+      super(tipoDeComunicacion, capacidad, pass);
     }
 
-    
     //Método para agregar un dispositivo a la red
     protected void addDevice(String tipo){
       Device d = new Device(tipo,"00"+countId);

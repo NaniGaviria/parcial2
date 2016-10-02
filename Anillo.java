@@ -3,11 +3,16 @@ public class Anillo extends Lan {
   protected String pass = "";
   ListaCircularDoble anillo;
 
-  public Anillo(String tipoDeComunicacion,int capacidad,String pass){
-    super(tipoDeComunicacion,capacidad);
-    this.pass = pass;
+  public Anillo(String tipoDeComunicacion, int capacidad, String pass){
+    super(tipoDeComunicacion, capacidad, pass);
     anillo = new ListaCircularDoble();
   }
+
+  public void insertarNodo() {
+
+  }
+
+
   @Override
   protected String getTipoDeComunicacion(){
     return tipoDeComunicacion;
