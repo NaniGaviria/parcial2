@@ -26,7 +26,7 @@ public class Estrella extends Lan {
   }
 
   protected void addDevice(String tipo){
-    Device d = new Device(tipo,countId);
+    Device d = new Device(tipo,"00"+countId);
     countId++;
     devices.add(d);
   }
@@ -43,7 +43,7 @@ public class Estrella extends Lan {
   protected void printDevices(){
 
     for(int i = 0; i < devices.size(); i++){
-      System.out.println(i+" Dispositivo: "+devices.get(i).getTipo()+" Dato: "+devices.get(i).getDato());
+      System.out.println(i+" Dispositivo: "+devices.get(i).getTipo()+" Id: "+devices.get(i).getId()+" Dato: "+devices.get(i).getDato());
     }
   }
 
