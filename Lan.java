@@ -18,7 +18,7 @@ protected int getCapacidad(){
 protected void setTipoDeComunicacion(){
   this.tipoDeComunicacion = tipoDeComunicacion;
 }
-protected void setCapocidad(){
+protected void setCapacidad(){
   this.capacidad = capacidad;
 }
 

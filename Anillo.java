@@ -1,4 +1,4 @@
-public class Anillo extends Lan{
+public class Anillo extends Lan {
 
   protected String pass = "";
 
