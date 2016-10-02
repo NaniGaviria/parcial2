@@ -10,6 +10,14 @@ public class MainListaCircularDoble {
     int e = 25;
     int f = 30;
 
+    /* Esto sirve para medir el tiempo de ejecución.
+    long time_start, time_end;
+    time_start = System.nanoTime();
+    // aquí va el método a medir
+    time_end = System.nanoTime();
+    System.out.println("the task has take "+ (( time_end - time_start )/1000) +" milliseconds");
+    */
+
     x.alta(a);
     x.alta(b);
     x.alta(c);
