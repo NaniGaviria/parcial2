@@ -14,22 +14,7 @@ public class Bus extends Lan {
       this.medio = medio;
     }
 
-    //Método get y set de Pass
-    protected String getPass(){
-      return pass;
-    }
-    protected void setPass(String pass){
-      this.pass = pass;
-    }
-
-    //Método get y set de medio
-    protected String getMedio(){
-      return medio;
-    }
-    protected void setMedio(String medio){
-      this.medio = medio;
-    }
-
+    
     //Método para agregar un dispositivo a la red
     protected void addDevice(String tipo){
       Device d = new Device(tipo,"00"+countId);
