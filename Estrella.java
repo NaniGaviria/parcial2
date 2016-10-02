@@ -7,7 +7,7 @@ public class Estrella extends Lan {
   private int countId=0;
 
   public Estrella(String tipoDeComunicacion,int capacidad,String pass){
-    super(tipoDeComunicacion,capacidad);
+    super(tipoDeComunicacion, capacidad, pass);
     this.pass = pass;
   }
 

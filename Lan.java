@@ -1,6 +1,7 @@
 public class Lan {
 
   protected String tipoDeComunicacion;
+  protected String pass;
   protected int capacidad;
   protected int numNodos;
 
