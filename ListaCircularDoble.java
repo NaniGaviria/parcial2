@@ -12,7 +12,7 @@ public class ListaCircularDoble {
     else return false;
   }
 
-  public ListaCircularDoble insertar(int dato) {
+  public void insertar(int dato) {
     if(vacio()) {
       Nodo nuevo = new Nodo(dato);
       primero = nuevo;
@@ -27,7 +27,6 @@ public class ListaCircularDoble {
       nuevo.next = primero;
       ultimo = nuevo;
     }
-    return this;
   }
 
   public boolean bajaxposicion(int dato) {

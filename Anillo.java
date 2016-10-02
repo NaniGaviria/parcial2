@@ -1,6 +1,5 @@
 public class Anillo extends Lan {
 
-  protected String pass = "";
   ListaCircularDoble anillo;
 
   public Anillo(String tipoDeComunicacion, int capacidad, String pass){
@@ -9,7 +8,7 @@ public class Anillo extends Lan {
   }
 
   public void insertarNodo() {
-
+    anillo.insertar();
   }
 
 }

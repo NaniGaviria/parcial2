@@ -1,4 +1,4 @@
-public class Device{
+public class Device {
 
   String tipo = "";
   String dato = "";
@@ -16,9 +16,6 @@ public class Device{
   }
   public String getDato(){
     return dato;
-  }
-  public void setTipo(String tipo){
-    this.tipo=tipo;
   }
   public String getTipo(){
     return tipo;
