@@ -2,7 +2,7 @@ public class Bus extends Lan {
 
   protected String pass = "";
 
-    public Bus(tipoDeComunicacion,String capacidad,String pass, String medio){
+    public Bus(String tipoDeComunicacion,int capacidad,String pass, String medio){
 
       super(tipoDeComunicacion,capacidad);
       this.pass = pass;
