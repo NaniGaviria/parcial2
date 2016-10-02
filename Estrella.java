@@ -32,6 +32,13 @@ private void addDevice(String tipo){
 private void removeDevice(int index){
   devices.remove(index);
 }
+
+private void enviarDato(int index,String dato){
+  devices.get(index).setDato(dato);
+}
+private String recibirDato(int index){
+  return devices.get(index).getDato();
+}
 private void printDevices(){
 
    for(int i = 0; i < devices.size(); i++){
