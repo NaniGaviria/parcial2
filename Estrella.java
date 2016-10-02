@@ -1,8 +1,7 @@
-
 import java.util.*;
 public class Estrella extends Lan {
 
-  private ArrayList <Device> devices  = new ArrayList<Device>();
+  private LinkedList <Device> devices  = new LinkedList<Device>();
   private String pass = "";
   private String  medio = "";//medio de transmision alambrico o inalambrico
   private int countId=0;
@@ -34,6 +33,12 @@ public class Estrella extends Lan {
   protected void removeDevice(int index){
     devices.remove(index);
   }
+  protected void removeDevice(String id){
+    for (int i = 0;i <= devices.size();i++) {
+      if (devices.get(i).getId().equals(id)==true)
+      devices.remove(i);
+    }
+  }
 
   protected void enviarDato(int index,String dato){
     devices.get(index).setDato(dato);
@@ -42,7 +47,6 @@ public class Estrella extends Lan {
     return devices.get(index).getDato();
   }
   protected void printDevices(){
-
     for(int i = 0; i < devices.size(); i++){
       System.out.println(i+" Dispositivo: "+devices.get(i).getTipo()+" Id: "+devices.get(i).getId()+" Dato: "+devices.get(i).getDato());
     }
