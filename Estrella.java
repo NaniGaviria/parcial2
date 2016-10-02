@@ -1,6 +1,8 @@
+
+import java.util.*; 
 public class Estrella extends Lan {
 
-ArrayList<Device>devices  = new ArrayList<Device>();
+ArrayList <Device> devices  = new ArrayList<Device>();
 private String pass = "";
 private String  medio = "";//medio de transmision alambrico o inalambrico
 
@@ -27,6 +29,13 @@ private void addDevice(String tipo){
   Device d = new Device(tipo);
   devices.add(d);
 }
+private void removeDevice(int index){
+  devices.remove(index);
+}
+// private void printDevices(){
+//   for(int i = 0; i < devices.size(); i++){
+//     Sistem.out.println(i+" Dispositivo: "+devices.get().getTipo()+"Dato: "+devices.get().getDato());
+//   }
 
 
 
