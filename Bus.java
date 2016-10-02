@@ -6,6 +6,7 @@ public class Bus extends Lan {
 
       super(tipoDeComunicacion,capacidad);
       this.pass = pass;
+      this.medio = medio;
     }
 
     //Metodo get y set de Pass
@@ -15,6 +16,16 @@ public class Bus extends Lan {
     protected void setPass(){
       this.pass = pass;
     }
+
+    //Metodo get y set de medio
+    protected String getMedio(){
+      return medio;
+    }
+    protected void setMedio(){
+      this.medio = medio;
+    }
+
+    
 
 
 }
