@@ -12,9 +12,4 @@ public class Anillo extends Lan {
 
   }
 
-
-  @Override
-  protected String getTipoDeComunicacion(){
-    return tipoDeComunicacion;
-
 }
