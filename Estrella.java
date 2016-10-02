@@ -1,5 +1,5 @@
 
-import java.util.*; 
+import java.util.*;
 public class Estrella extends Lan {
 
 ArrayList <Device> devices  = new ArrayList<Device>();
@@ -32,11 +32,12 @@ private void addDevice(String tipo){
 private void removeDevice(int index){
   devices.remove(index);
 }
-// private void printDevices(){
-//   for(int i = 0; i < devices.size(); i++){
-//     Sistem.out.println(i+" Dispositivo: "+devices.get().getTipo()+"Dato: "+devices.get().getDato());
-//   }
+private void printDevices(){
 
+   for(int i = 0; i < devices.size(); i++){
+     System.out.println(i+" Dispositivo: "+devices.get(i).getTipo()+" Dato"+devices.get(i).getTipo());
+  }
+}
 
 
 }
