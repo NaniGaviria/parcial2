@@ -1,6 +1,8 @@
 public class Bus extends Lan {
 
-  protected String pass = "";
+  private String pass = "";
+  private String  medio = "";//medio de transmision alambrico o inalambrico
+  private int countId=0;
 
     public Bus(String tipoDeComunicacion,int capacidad,String pass, String medio){
 
@@ -13,7 +15,7 @@ public class Bus extends Lan {
     protected String getPass(){
       return pass;
     }
-    protected void setPass(){
+    protected void setPass(String pass){
       this.pass = pass;
     }
 
@@ -21,11 +23,11 @@ public class Bus extends Lan {
     protected String getMedio(){
       return medio;
     }
-    protected void setMedio(){
+    protected void setMedio(String medio){
       this.medio = medio;
     }
 
-    
+
 
 
 }
