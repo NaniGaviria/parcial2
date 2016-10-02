@@ -1,9 +1,9 @@
-public class Bus (){
+public class Bus extends Lan {
 
   protected String pass = "";
 
-
     public Bus(tipoDeComunicacion,String capacidad,String pass, String medio){
+
       super(tipoDeComunicacion,capacidad);
       this.pass = pass;
     }
@@ -15,9 +15,6 @@ public class Bus (){
     protected void setPass(){
       this.pass = pass;
     }
-
-
-
 
 
 }
