@@ -1,12 +1,32 @@
 public class Estrella extends Lan {
 
-protected String pass = "";
+ArrayList<Device>devices  = new ArrayList<Device>();
+private String pass = "";
+private String  medio = "";//medio de transmision alambrico o inalambrico
 
-
-  public Estrella(String tipoDeComunicacion,String capacidad,String pass){
+  public Estrella(String tipoDeComunicacion,String capacidad,String pass, String medio){
     super(tipoDeComunicacion,capacidad);
     this.pass = pass;
+    this.medio = medio;
   }
+
+private String getPass(){
+  return pass;
+}
+private void setPass(){
+  this.pass = pass;
+}
+private String getMedio(){
+  return medio;
+}
+private void setMedio(){
+  this.medio = medio;
+}
+
+private void addDevice(String tipo){
+  Device d = new Device(tipo);
+  devices.add(d);
+}
 
 
 
