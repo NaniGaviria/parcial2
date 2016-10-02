@@ -1,4 +1,4 @@
-public lclass Device{
+public class Device{
 
   String tipo = "";
   String dato = "";
