@@ -6,7 +6,7 @@ ArrayList <Device> devices  = new ArrayList<Device>();
 private String pass = "";
 private String  medio = "";//medio de transmision alambrico o inalambrico
 
-  public Estrella(String tipoDeComunicacion,String capacidad,String pass, String medio){
+  public Estrella(String tipoDeComunicacion,int capacidad,String pass, String medio){
     super(tipoDeComunicacion,capacidad);
     this.pass = pass;
     this.medio = medio;

@@ -1,10 +1,10 @@
 public class Lan {
 
   protected String tipoDeComunicacion;
-  protected String capacidad;
+  protected int capacidad;
   protected int numNodos;
 
-public Lan(String tipoDeComunicacion,String capacidad){
+public Lan(String tipoDeComunicacion,int capacidad){
   this.tipoDeComunicacion = tipoDeComunicacion;
   this.capacidad = capacidad;
 }
@@ -12,7 +12,7 @@ public Lan(String tipoDeComunicacion,String capacidad){
 protected String getTipoDeComunicacion(){
   return tipoDeComunicacion;
 }
-protected String getCapacidad(){
+protected int getCapacidad(){
   return capacidad;
 }
 protected void setTipoDeComunicacion(){
