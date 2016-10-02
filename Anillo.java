@@ -8,7 +8,8 @@ public class Anillo extends Lan {
     this.pass = pass;
     anillo = new ListaCircularDoble();
   }
-
-  public
+  @Override
+  protected String getTipoDeComunicacion(){
+    return tipoDeComunicacion;
 
 }
