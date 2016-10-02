@@ -1,11 +1,20 @@
-public class Bus (){
+public class Bus extends Lan {
 
   protected String pass = "";
 
+    public Bus(tipoDeComunicacion,String capacidad,String pass, String medio){
 
-    public Bus(tipoDeComunicacion,String capacidad,String pass){
       super(tipoDeComunicacion,capacidad);
       this.pass = pass;
     }
+
+    //Metodo get y set de Pass
+    protected String getPass(){
+      return pass;
+    }
+    protected void setPass(){
+      this.pass = pass;
+    }
+
 
 }
