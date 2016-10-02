@@ -9,6 +9,6 @@ public class Anillo extends Lan {
     anillo = new ListaCircularDoble();
   }
 
-  public
+  
 
 }

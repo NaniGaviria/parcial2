@@ -15,13 +15,13 @@ public class Estrella extends Lan {
   protected String getPass(){
     return pass;
   }
-  protected void setPass(pass){
+  protected void setPass(String pass){
     this.pass = pass;
   }
   protected String getMedio(){
     return medio;
   }
-  protected void setMedio(medio){
+  protected void setMedio(String medio){
     this.medio = medio;
   }
 

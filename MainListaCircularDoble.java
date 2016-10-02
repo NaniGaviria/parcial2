@@ -18,12 +18,12 @@ public class MainListaCircularDoble {
     System.out.println("the task has take "+ (( time_end - time_start )/1000) +" milliseconds");
     */
 
-    x.alta(a);
-    x.alta(b);
-    x.alta(c);
-    x.alta(d);
-    x.alta(e);
-    x.alta(f);
+    x.insertar(a);
+    x.insertar(b);
+    x.insertar(c);
+    x.insertar(d);
+    x.insertar(e);
+    x.insertar(f);
 
     System.out.println("Valores iniciales:\n");
     x.imprimir();
