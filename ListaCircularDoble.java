@@ -7,20 +7,20 @@ public class ListaCircularDoble {
     ultimo = null;
   }
 
-  public boolean estavacio() {
+  public boolean vacio() {
     if(primero == null) return true;
     else return false;
   }
 
-  public ListaCircularDoble alta(int dat) {
-    if(estavacio()) {
-      Nodo nuevo = new Nodo(dat);
+  public ListaCircularDoble insertar(int dato) {
+    if(vacio()) {
+      Nodo nuevo = new Nodo(dato);
       primero = nuevo;
       ultimo = nuevo;
       nuevo.next = nuevo;
       nuevo.ant = nuevo;
     } else {
-      Nodo nuevo = new Nodo(dat);
+      Nodo nuevo = new Nodo(dato);
       ultimo.next = nuevo;
       nuevo.ant = ultimo;
       primero.ant = nuevo;
@@ -30,15 +30,15 @@ public class ListaCircularDoble {
     return this;
   }
 
-  public boolean bajaxposicion(int dat) {
+  public boolean bajaxposicion(int dato) {
     Nodo actual = primero;
     Nodo anterior;
     Nodo siguiente;
-    for(int i = 0;i <= dat;i++) {
+    for(int i = 0;i <= dato;i++) {
       if(actual == ultimo) {
-        if(i < dat) return false;
+        if(i < dato) return false;
         else {
-          if(i == dat) {
+          if(i == dato) {
             anterior = actual.ant;
             anterior.next = primero;
             primero.ant = anterior;
@@ -49,14 +49,14 @@ public class ListaCircularDoble {
         }
 
       } else {
-        if(dat == 0) {
+        if(dato == 0) {
           siguiente = actual.next;
           siguiente.ant = ultimo;
           ultimo.next = siguiente;
           primero = siguiente;
           return true;
         }
-        if(dat == i) {
+        if(dato == i) {
           anterior = actual.ant;
           siguiente = actual.next;
           anterior.next = siguiente;
