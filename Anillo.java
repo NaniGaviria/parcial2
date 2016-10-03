@@ -1,26 +1,24 @@
+//Autor: Ana María Gaviria
+//Clase Anillo: Creo mi clase anillo que heredara parametros de Lan
 public class Anillo extends Lan {
 
-  ListaCircularDoble anillo;
-  Device device;
+  ListaCircularDoble anillo; //Objeto de tipo ListaCircularDoble
+  Device equipo; //Objeto tipo Device
   private int countId = 0;
 
+  //Mi constructor de la clase anillo que hereda los parametros de lan
   public Anillo(String tipoDeComunicacion, int capacidad, String pass){
     super(tipoDeComunicacion, capacidad, pass);
     anillo = new ListaCircularDoble();
   }
 
-  protected void addDevice(String tipo){
-    device = new Device("00"+countId, tipo);
+  protected void addEquipo(String tipo){
+    equipo = new Device("00"+countId, tipo);
     countId++;
-    anillo.insertar(device);
+    anillo.insertar(equipo);
   }
 
-  // public void addDevice(String id, String tipo) {
-  //   device = new Device(id, tipo);
-  //   anillo.insertar(device);
-  // }
-
-  public void removeDevice(int index) {
+  public void removeEquipo(int index) {
     anillo.eliminarPorPosicion(index);
   }
 

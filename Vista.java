@@ -1,4 +1,5 @@
-
+//Autor: Ana María Gaviria
+//Clase Vista: Esta es mi clase vista donde muestro el menú de opciones y llamo los metodos de las clases
 import java.util.Scanner;
 public class Vista {
 
@@ -18,13 +19,11 @@ public class Vista {
       case 1: crearEstrella();
       case 2: crearAnillo();
       case 3: crearBus();
-      //   case 4:
+
     }
   }
 
   //Metodo para crear estrella
-
-
   public void crearEstrella () {
 
     String tipoCom;
@@ -67,14 +66,14 @@ public class Vista {
         System.out.println("Digite tipo de dispositivo a agregar");
         input.nextLine();
         t = input.nextLine();
-        redEstrella.addDevice(t);
+        redEstrella.addEquipo(t);
         break;
 
         case 2:
         System.out.println ("Digite el id del dispositivo a quitar");
         input.nextLine();
         i = input.nextInt();
-        redEstrella.removeDevice(i);
+        redEstrella.removeEquipo(i);
         break;
 
         case 3:
@@ -96,7 +95,7 @@ public class Vista {
         case 5:
         System.out.println ("Listando dispositivos" );
         input.nextLine();
-        redEstrella.printDevices();
+        redEstrella.printEquipo();
         break;
 
         case 6:
@@ -126,7 +125,7 @@ public class Vista {
 
   }
 
-  //Metodo para mostrar el menu anilla
+  //Metodo para mostrar el menu anillo
   public void menuAnillo() {
     String t; //varables que almacena el tipo de dispositivo
     int i; //Variable que almacena la posición del dispositivo
@@ -144,14 +143,14 @@ public class Vista {
         System.out.println("Digite tipo de dispositivo a agregar");
         input.nextLine();
         t = input.nextLine();
-        redAnillo.addDevice(t);
+        redAnillo.addEquipo(t);
         break;
 
         case 2:
         System.out.println ("Digite el id del dispositivo a quitar");
         input.nextLine();
         i = input.nextInt();
-        redAnillo.removeDevice(i);
+        redAnillo.removeEquipo(i);
         break;
 
         case 3:
@@ -225,14 +224,14 @@ public class Vista {
         System.out.println("Digite tipo de dispositivo a agregar");
         input.nextLine();
         t = input.nextLine();
-        redBus.addDevice(t);
+        redBus.addEquipo(t);
         break;
 
         case 2:
         System.out.println ("Digite el id del dispositivo a quitar");
         input.nextLine();
         i = input.nextInt();
-        redBus.removeDevice(i);
+        redBus.removeEquipo(i);
         break;
 
         case 3:
@@ -254,7 +253,7 @@ public class Vista {
         case 5:
         System.out.println ("Listando dispositivos" );
         input.nextLine();
-        redBus.printDevices();
+        redBus.printEquipo();
         break;
 
         case 6:

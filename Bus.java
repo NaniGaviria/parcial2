@@ -1,26 +1,29 @@
+//Autor: Ana María Gaviria
+//Clase Bus: Creo mi clase bus que heredara parametros de Lan
 import java.util.*;
 public class Bus extends Lan {
 
-  private ArrayList <Device> devices  = new ArrayList<Device>();
+  private ArrayList <Device> devices  = new ArrayList<Device>(); //ArrayList de tipo dispositivo
   //Creo las variables private (únicas de esta clase)
   private String pass = "";
   private String  medio = "";//medio de transmision alambrico o inalambrico
   private int countId=0;
 
+    //Mi constructor de la clase bus que hereda parametros de lan
     public Bus(String tipoDeComunicacion,int capacidad,String pass){
 
       super(tipoDeComunicacion, capacidad, pass);
     }
 
     //Método para agregar un dispositivo a la red
-    protected void addDevice(String tipo){
+    protected void addEquipo(String tipo){
       Device d = new Device(tipo,"00"+countId);
       countId++;
       devices.add(d);
     }
 
     //Método para quitar un dispositivo
-    protected void removeDevice(int index){
+    protected void removeEquipo(int index){
       devices.remove(index);
     }
 
@@ -35,7 +38,7 @@ public class Bus extends Lan {
     }
 
     //Método para imprimir la cantidad de dispositivos
-    protected void printDevices(){
+    protected void printEquipo(){
 
       for(int i = 0; i < devices.size(); i++){
         System.out.println(i+" Dispositivo: "+devices.get(i).getTipo()+" Id: "+devices.get(i).getId()+" Dato: "+devices.get(i).getDato());
