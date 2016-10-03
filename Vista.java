@@ -46,9 +46,34 @@ public class Vista {
 
   //Método para mostrar el menú de la estrela
   public void menuEstrella () {
+    String t; //varables que almacena el tipo de dispositivo
+    int i; //Variable que almacena la posición del dispositivo
+    System.out.println ("Seleccione la acción a ejecutar \n"+"1. Agregar dispositivos a la red \n"+"2.Quitar dispositivo de la red" +
+                                                           "\n3.Enviar datos" + "\n4.Recibir datos" + "\n5.Cantidad de dispositivos en la red");
+    opcion = input.nextInt();
+    switch (opcion) {
+      case 1:
+      System.out.println("Digite tipo de dispositivo a agregar");
+      t = input.nextLine();
+      redEstrella.addDevice(t);
+      break;
 
+      case 2:
+      System.out.println ("Digite el id del dispositivo a quitar");
+      t = input.nextLine();
+      redEstrella.removeDevice(t);
+      break;
 
+     case 3:
+     System.out.println ("Dato a enviar");
+     t = input.nextLine();
+     i = input.nextInt();
+     redEstrella.enviarDato(i,t);
+     break;
 
+    //   case 4:
+    //   case 5:
+     }
   }
 
 
