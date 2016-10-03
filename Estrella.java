@@ -26,9 +26,11 @@ public class Estrella extends Lan {
   protected void enviarDato(int index,String dato){
     devices.get(index).setDato(dato);
   }
+
   protected String recibirDato(int index){
     return devices.get(index).getDato();
   }
+
   protected void printDevices(){
     for(int i = 0; i < devices.size(); i++){
       System.out.println(i+" Dispositivo: "+devices.get(i).getTipo()+" Id: "+devices.get(i).getId()+" Dato: "+devices.get(i).getDato());
