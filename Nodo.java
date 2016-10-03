@@ -1,6 +1,6 @@
 public class Nodo {
 
-  int dato;
+  Device dato;
   Nodo next;
   Nodo ant;
 
