@@ -6,7 +6,6 @@ public class Vista {
   Estrella redEstrella;
   Anillo redAnillo;
   Bus redBus;
-  //Hub redHub;
 
   int opcion; //Variable para que almacene el dato digitado del menu
 
@@ -129,6 +128,61 @@ public class Vista {
 
   //Metodo para mostrar el menu anilla
   public void menuAnillo() {
+    String t; //varables que almacena el tipo de dispositivo
+    int i; //Variable que almacena la posición del dispositivo
+    boolean salir = false; //Variable para detener el ciclo
+
+    do {
+      System.out.println ("\nSeleccione la acción a ejecutar \n"+"1. Agregar dispositivos a la red \n"+"2.Quitar dispositivo de la red" +
+      "\n3.Enviar datos" + "\n4.Recibir datos" + "\n5.Cantidad de dispositivos en la red" +
+      "\n6.Salir");
+
+
+      opcion = input.nextInt();
+      switch (opcion) {
+        case 1:
+        System.out.println("Digite tipo de dispositivo a agregar");
+        input.nextLine();
+        t = input.nextLine();
+        redAnillo.addDevice(t);
+        break;
+
+        case 2:
+        System.out.println ("Digite el id del dispositivo a quitar");
+        input.nextLine();
+        i = input.nextInt();
+        redAnillo.removeDevice(i);
+        break;
+
+        case 3:
+        System.out.println ("Dato a enviar");
+        input.nextLine();
+        t = input.nextLine();
+        System.out.println ("Posición del dispositivo en la red");
+        i = input.nextInt();
+        //redAnillo.enviarDato(i,t);
+        break;
+
+        case 4:
+        System.out.println ("Ubicación del dispositivo");
+        input.nextLine();
+        i = input.nextInt();
+        //System.out.println("Dato recibido: " + redAnillo.recibirDato(i));
+        break;
+
+        case 5:
+        System.out.println ("Listando dispositivos" );
+        input.nextLine();
+        //redAnillo.printDevices();
+        break;
+
+        case 6:
+        salir=true;
+        System.exit(0);
+        break;
+
+      }
+    } while (salir==false);
 
   }
 
