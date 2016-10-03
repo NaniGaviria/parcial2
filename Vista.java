@@ -17,7 +17,7 @@ public class Vista {
     opcion = input.nextInt();
     switch (opcion) {
       case 1: crearEstrella();
-    //   case 2:
+      case 2: crearAnillo();
     //   case 3:
     //   case 4:
      }
@@ -78,6 +78,25 @@ public class Vista {
 
 
 
+  public void crearAnillo() {
 
+    String tipoCom, pass;
+    int capacidad;
+    input.nextLine();
+    System.out.println("Digite el tipo de comunicación");
+    tipoCom = input.nextLine();
+    System.out.println("Digite la capacidad de la red");
+    capacidad = input.nextInt();
+    input.nextLine();
+    System.out.println ("Digita una contraseña para la red");
+    pass = input.nextLine();
+
+    redAnillo = new Anillo(tipoCom, capacidad, pass);
+
+  }
+
+  public void menuAnillo() {
+    
+  }
 
 }
