@@ -12,7 +12,7 @@ public class ListaCircularDoble {
     else return false;
   }
 
-  public void insertar(int dato) {
+  public void insertar(Device dato) {
     if(vacio()) {
       Nodo nuevo = new Nodo(dato);
       primero = nuevo;

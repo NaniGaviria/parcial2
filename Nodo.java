@@ -4,7 +4,7 @@ public class Nodo {
   Nodo next;
   Nodo ant;
 
-  Nodo(int a) {
+  Nodo(Device a) {
     dato = a;
     ant = null;
     next = null;

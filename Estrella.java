@@ -2,24 +2,14 @@ import java.util.*;
 public class Estrella extends Lan {
 
   private LinkedList <Device> devices  = new LinkedList<Device>();
-  private String pass = "";
-  private String  medio = "";//medio de transmision alambrico o inalambrico
-  private int countId=0;
+  private int countId = 0;
 
-  public Estrella(String tipoDeComunicacion,int capacidad,String pass){
+  public Estrella(String tipoDeComunicacion, int capacidad, String pass){
     super(tipoDeComunicacion, capacidad, pass);
-    this.pass = pass;
-  }
-
-  protected String getMedio(){
-    return medio;
-  }
-  protected void setMedio(String medio){
-    this.medio = medio;
   }
 
   protected void addDevice(String tipo){
-    Device d = new Device(tipo,"00"+countId);
+    Device d = new Device("00"+countId, tipo);
     countId++;
     devices.add(d);
   }

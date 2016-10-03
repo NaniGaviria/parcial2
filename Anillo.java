@@ -8,7 +8,7 @@ public class Anillo extends Lan {
     anillo = new ListaCircularDoble();
   }
 
-  public void insertarNodo(int id, String tipo) {
+  public void insertarNodo(String id, String tipo) {
     device = new Device(id, tipo);
     anillo.insertar(device);
   }
