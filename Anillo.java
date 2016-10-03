@@ -12,12 +12,14 @@ public class Anillo extends Lan {
     anillo = new ListaCircularDoble();
   }
 
+  //Metodo que permite agregar un equipo (Este me los enumera)
   protected void addEquipo(String tipo){
     equipo = new Device("00"+countId, tipo);
     countId++;
     anillo.insertar(equipo);
   }
 
+  //Metodo que permite remover el equipo
   public void removeEquipo(int index) {
     anillo.eliminarPorPosicion(index);
   }

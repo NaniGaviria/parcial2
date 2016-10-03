@@ -1,3 +1,5 @@
+//Autor: Ana María Gaviria
+//Clase ListaCircularDoble: Esta es mi clase lista circular doble
 public class ListaCircularDoble {
   Nodo primero;
   Nodo ultimo;
@@ -12,6 +14,7 @@ public class ListaCircularDoble {
     else return false;
   }
 
+  //Metodo que permite insertar in equipo
   public void insertar(Device dato) {
     if(vacio()) {
       Nodo nuevo = new Nodo(dato);
@@ -29,6 +32,7 @@ public class ListaCircularDoble {
     }
   }
 
+  //Metodo que permite eliminar solo por posicion
   public boolean eliminarPorPosicion(int dato) {
     Nodo actual = primero;
     Nodo anterior;
@@ -68,7 +72,7 @@ public class ListaCircularDoble {
     return false;
   }
 
-
+  //Metodo que imprime la cantidad de equipos
   public void imprimir() {
     Nodo actual;
     actual = primero;

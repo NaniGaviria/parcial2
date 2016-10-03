@@ -1,5 +1,8 @@
+//Autor: Ana María Gaviria
+//Clase Device: Esta es mi clase device quien tendra las caracteristicas de cada equipo
 public class Device {
 
+  //Creo mis atributos
   String tipo;
   String dato = "";
   String id;
@@ -8,6 +11,8 @@ public class Device {
     this.tipo = tipo;
     this.id = id;
   }
+
+  //Creo los metodos de la clase
   public String getId(){
     return id;
   }
