@@ -4,7 +4,7 @@ public class Device {
   String dato = "";
   String id = "";
 
-  public Device(String tipo, String id){
+  public Device(int id, String tipo){
     this.tipo = tipo;
     this.id = id;
   }
