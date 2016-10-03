@@ -46,6 +46,7 @@ public class Vista {
 
   //Método para mostrar el menú de la estrela
   public void menuEstrella () {
+
     String t; //varables que almacena el tipo de dispositivo
     int i; //Variable que almacena la posición del dispositivo
     System.out.println ("Seleccione la acción a ejecutar \n"+"1. Agregar dispositivos a la red \n"+"2.Quitar dispositivo de la red" +
@@ -64,18 +65,27 @@ public class Vista {
       redEstrella.removeDevice(t);
       break;
 
-     case 3:
-     System.out.println ("Dato a enviar");
-     t = input.nextLine();
-     i = input.nextInt();
-     redEstrella.enviarDato(i,t);
-     break;
+      case 3:
+      System.out.println ("Dato a enviar");
+      t = input.nextLine();
+      System.out.println ("Posición del dispositivo en la red");
+      i = input.nextInt();
+      redEstrella.enviarDato(i,t);
+      break;
 
-    //   case 4:
-    //   case 5:
+      case 4:
+      System.out.println ("Ubicación del dispositivo");
+      i = input.nextInt();
+      redEstrella.removeDevice(i);
+      break;
+
+      case 5:
+      System.out.println ("Listando dispositivos");
+      redEstrella.printDevices();
+      break;
+
      }
   }
-
 
 
   public void crearAnillo() {
@@ -96,7 +106,7 @@ public class Vista {
   }
 
   public void menuAnillo() {
-    
+
   }
 
 }
