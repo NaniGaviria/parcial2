@@ -1,24 +1,24 @@
 public class Device {
 
-  String tipo;
-  String dato = "";
+  String type;
+  String data;
   String id;
 
-  public Device(String id, String tipo){
-    this.tipo = tipo;
+  protected Device(String id, String type){
+    this.type = type;
     this.id = id;
   }
-  public String getId(){
+  protected String getId(){
     return id;
   }
-  public void setDato(String dato){
-    this.dato = dato;
+  protected void setData(String data){
+    this.data = data;
   }
-  public String getDato(){
-    return dato;
+  protected String getData(){
+    return data;
   }
-  public String getTipo(){
-    return tipo;
+  protected String getType(){
+    return type;
   }
 
 }

@@ -1,8 +1,8 @@
-public class ListaCircularDoble {
-  Nodo primero;
-  Nodo ultimo;
+public class DoublyCircularList {
+  Node primero;
+  Node ultimo;
 
-  ListaCircularDoble() {
+  DoublyCircularList() {
     primero = null;
     ultimo = null;
   }
@@ -12,15 +12,15 @@ public class ListaCircularDoble {
     else return false;
   }
 
-  public void insertar(Device dato) {
+  public void add(Device dato) {
     if(vacio()) {
-      Nodo nuevo = new Nodo(dato);
+      Node nuevo = new Node(dato);
       primero = nuevo;
       ultimo = nuevo;
       nuevo.next = nuevo;
       nuevo.ant = nuevo;
     } else {
-      Nodo nuevo = new Nodo(dato);
+      Node nuevo = new Node(dato);
       ultimo.next = nuevo;
       nuevo.ant = ultimo;
       primero.ant = nuevo;
@@ -30,9 +30,9 @@ public class ListaCircularDoble {
   }
 
   public boolean eliminarPorPosicion(int dato) {
-    Nodo actual = primero;
-    Nodo anterior;
-    Nodo siguiente;
+    Node actual = primero;
+    Node anterior;
+    Node siguiente;
     for(int i = 0;i <= dato;i++) {
       if(actual == ultimo) {
         if(i < dato) return false;
@@ -70,7 +70,7 @@ public class ListaCircularDoble {
 
 
   public void imprimir() {
-    Nodo actual;
+    Node actual;
     actual = primero;
     while(actual != ultimo) {
       System.out.println(actual.dato);

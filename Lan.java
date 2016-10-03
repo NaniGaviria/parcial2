@@ -1,20 +1,20 @@
 public class Lan {
 
-  protected String tipoDeComunicacion;
-  protected String pass;
-  protected int capacidad;
-  protected int numNodos;
+  protected String type;
+  protected String password;
+  protected int capacity;
+  protected int numNodes;
 
-  public Lan(String tipoDeComunicacion, int capacidad, String pass){
-    this.tipoDeComunicacion = tipoDeComunicacion;
-    this.capacidad = capacidad;
-    this.pass = pass;
+  public Lan(String type, int capacity, String password){
+    this.type = type;
+    this.capacity = capacity;
+    this.password = password;
   }
 
-  protected String getTipoDeComunicacion(){
-    return tipoDeComunicacion;
+  protected String getType(){
+    return type;
   }
-  protected int getCapacidad(){
-    return capacidad;
+  protected int getCapacity(){
+    return capacity;
   }
 }

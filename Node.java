@@ -1,10 +1,10 @@
-public class Nodo {
+public class Node {
 
   Device dato;
-  Nodo next;
-  Nodo ant;
+  Node next;
+  Node ant;
 
-  Nodo(Device a) {
+  Node(Device a) {
     dato = a;
     ant = null;
     next = null;

@@ -1,27 +1,27 @@
-public class Anillo extends Lan {
+public class Ring extends Lan {
 
-  ListaCircularDoble anillo;
+  DoublyCircularList ring;
   Device device;
   private int countId = 0;
 
-  public Anillo(String tipoDeComunicacion, int capacidad, String pass){
+  public Ring(String tipoDeComunicacion, int capacidad, String pass){
     super(tipoDeComunicacion, capacidad, pass);
-    anillo = new ListaCircularDoble();
+    ring = new DoublyCircularList();
   }
 
   protected void addDevice(String tipo){
     device = new Device("00"+countId, tipo);
     countId++;
-    anillo.insertar(device);
+    ring.add(device);
   }
 
   // public void addDevice(String id, String tipo) {
   //   device = new Device(id, tipo);
-  //   anillo.insertar(device);
+  //   ring.insertar(device);
   // }
 
   public void removeDevice(int index) {
-    anillo.eliminarPorPosicion(index);
+    ring.eliminarPorPosicion(index);
   }
 
 }

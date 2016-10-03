@@ -2,8 +2,8 @@ public class Main {
 
   public static void main(String[]args) {
 
-    Vista vista = new Vista();
-    vista.iniciar();
+    View view = new View();
+    view.init();
 
     /* Esto sirve para medir el tiempo de ejecución.
     long time_start, time_end;
