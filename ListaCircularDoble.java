@@ -29,7 +29,7 @@ public class ListaCircularDoble {
     }
   }
 
-  public boolean bajaxposicion(int dato) {
+  public boolean eliminarPorPosicion(int dato) {
     Nodo actual = primero;
     Nodo anterior;
     Nodo siguiente;

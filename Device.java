@@ -1,8 +1,8 @@
 public class Device {
 
-  String tipo = "";
+  String tipo;
   String dato = "";
-  String id = "";
+  String id;
 
   public Device(String id, String tipo){
     this.tipo = tipo;
