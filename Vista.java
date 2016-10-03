@@ -137,7 +137,7 @@ public class Vista {
     String tipoCom;
     int capacidad;
     String pass;
-
+    input.nextLine();
     System.out.println("Digite el tipo de comunicación");
     tipoCom = input.nextLine();
 
@@ -149,7 +149,7 @@ public class Vista {
     System.out.println ("Digita una contraseña para la red");
     pass = input.nextLine();
 
-    redBus= new Bus(tipoCom, capacidad, pass);
+    redBus = new Bus(tipoCom, capacidad, pass);
     menuBus(); //Llama al metodo que nos muestra el menu de la red Bus
   }
 
@@ -159,10 +159,12 @@ public class Vista {
     int i; //Variable que almacena la posición del dispositivo
     boolean salir = false; //Variable para detener el ciclo
 
-    System.out.println ("Seleccione la acción a ejecutar \n"+"1. Agregar dispositivos a la red \n"+"2.Quitar dispositivo de la red" +
-    "\n3.Enviar datos" + "\n4.Recibir datos" + "\n5.Cantidad de dispositivos en la red" +
-    "\n6.Salir");
     do {
+      System.out.println ("\nSeleccione la acción a ejecutar \n"+"1. Agregar dispositivos a la red \n"+"2.Quitar dispositivo de la red" +
+      "\n3.Enviar datos" + "\n4.Recibir datos" + "\n5.Cantidad de dispositivos en la red" +
+      "\n6.Salir");
+
+
       opcion = input.nextInt();
       switch (opcion) {
         case 1:
@@ -196,17 +198,18 @@ public class Vista {
         break;
 
         case 5:
-        System.out.println ("Listando dispositivos");
+        System.out.println ("Listando dispositivos" );
         input.nextLine();
         redBus.printDevices();
         break;
 
         case 6:
-        salir = true;
+        salir=true;
+        System.exit(0);
         break;
 
       }
-    }while (salir==false);
+    } while (salir==false);
 
   }
 
